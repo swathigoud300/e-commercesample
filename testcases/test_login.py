@@ -13,7 +13,6 @@ class TestMainPage:
     def test_002(self, setup):
         self.driver = setup
         self.driver.get(self.base_url)
-        self.driver.implicitly_wait(10)
         self.driver.maximize_window()
 
         self.hp = Homepage(self.driver)
