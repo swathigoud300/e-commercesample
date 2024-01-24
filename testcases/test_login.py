@@ -14,6 +14,7 @@ class TestMainPage:
         self.driver = setup
         self.driver.get(self.base_url)
         self.driver.maximize_window()
+        self.driver.implicitly_wait(10)
 
         self.hp = Homepage(self.driver)
         self.hp.login()
