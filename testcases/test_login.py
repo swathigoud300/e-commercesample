@@ -2,17 +2,17 @@ import time
 from pageobjects.homepage import Homepage
 from pageobjects.signup import signup
 from pageobjects.login import Login
-
+from utilities.readproperties import ReadConfig
 
 class TestMainPage:
+    baseURL = ReadConfig.getApplicationURL()
+    Luser = ReadConfig.loginuser()
+    Lpwd = ReadConfig.loginPassword()
 
-    base_url = "https://www.demoblaze.com/"
-    Luser = "swa1234"
-    Lpwd = "swa1234"
 
     def test_002(self, setup):
         self.driver = setup
-        self.driver.get(self.base_url)
+        self.driver.get(self.baseURL)
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)
 

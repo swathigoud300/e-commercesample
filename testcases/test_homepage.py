@@ -1,17 +1,17 @@
 import time
 from pageobjects.homepage import Homepage
 from pageobjects.signup import signup
-
+from utilities.readproperties import ReadConfig
 
 class TestMainPage:
 
-    base_url = "https://www.demoblaze.com/"
-    user = "swa1234"
-    pwd = "swa1234"
+    baseURL = ReadConfig.getApplicationURL()
+    suser = ReadConfig.signupusername()
+    spwd = ReadConfig.signuppassword()
 
     def test_001(self, setup):
         self.driver = setup
-        self.driver.get(self.base_url)
+        self.driver.get(self.baseURL)
         self.driver.implicitly_wait(10)
         self.driver.maximize_window()
 
@@ -19,8 +19,8 @@ class TestMainPage:
         self.hp.signup()
 
         self.reg = signup(self.driver)
-        self.reg.signup_username(self.user)
-        self.reg.signup_password(self.pwd)
+        self.reg.signup_username(self.suser)
+        self.reg.signup_password(self.spwd)
         self.reg.signup_button()
 
 
