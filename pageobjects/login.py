@@ -5,6 +5,7 @@ class Login:
     username_ID_txtbox = "loginusername"
     password_ID_txtbox = "loginpassword"
     Login_XPATH_button = "//button[normalize-space()='Log in']"
+    nameofuser_LINKTEXT_link = "Welcome swa123"
 
     def __init__(self, driver):
         self.driver = driver
@@ -17,5 +18,8 @@ class Login:
 
     def login_button(self):
         self.driver.find_element(By.XPATH, self.Login_XPATH_button).click()
+
+    def nameofuser_link(self):
+        self.driver.find_element(By.LINK_TEXT, self.nameofuser_LINKTEXT_link)
 
 

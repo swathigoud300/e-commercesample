@@ -1,0 +1,67 @@
+01/26/2024 12:08:24 PM: DEBUG: Selenium Manager binary found at: C:\Users\annam\PycharmProjects\e-comm\.venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+01/26/2024 12:08:24 PM: DEBUG: Executing process: C:\Users\annam\PycharmProjects\e-comm\.venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+01/26/2024 12:08:24 PM: DEBUG: chromedriver not found in PATH
+01/26/2024 12:08:24 PM: DEBUG: chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+01/26/2024 12:08:24 PM: DEBUG: Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+01/26/2024 12:08:24 PM: DEBUG: Output: "\r\r\n\r\r\nVersion=120.0.6099.225\r\r\n\r\r\n\r\r\n\r"
+01/26/2024 12:08:24 PM: DEBUG: Detected browser: chrome 120.0.6099.225
+01/26/2024 12:08:24 PM: DEBUG: Required driver: chromedriver 120.0.6099.109
+01/26/2024 12:08:24 PM: DEBUG: chromedriver 120.0.6099.109 already in the cache
+01/26/2024 12:08:24 PM: DEBUG: Driver path: C:\Users\annam\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
+01/26/2024 12:08:24 PM: DEBUG: Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+01/26/2024 12:08:24 PM: DEBUG: Using driver at: C:\Users\annam\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
+01/26/2024 12:08:24 PM: DEBUG: Started executable: `C:\Users\annam\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe` in a child process with pid: 9204 using 0 to output -3
+01/26/2024 12:08:24 PM: DEBUG: POST http://localhost:51285/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}
+01/26/2024 12:08:24 PM: DEBUG: Starting new HTTP connection (1): localhost:51285
+01/26/2024 12:08:25 PM: DEBUG: http://localhost:51285 "POST /session HTTP/1.1" 200 0
+01/26/2024 12:08:25 PM: DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"120.0.6099.225","chrome":{"chromedriverVersion":"120.0.6099.109 (3419140ab665596f21b385ce136419fde0924272-refs/branch-heads/6099@{#1483})","userDataDir":"C:\\Users\\annam\\AppData\\Local\\Temp\\scoped_dir9204_415399925"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:51289"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"10a728c1f1f0371c6aebf1c16742d472"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/26/2024 12:08:25 PM: DEBUG: Finished Request
+01/26/2024 12:08:25 PM: INFO: ***Testing Homepage test case started***
+01/26/2024 12:08:25 PM: DEBUG: POST http://localhost:51285/session/10a728c1f1f0371c6aebf1c16742d472/url {'url': 'https://www.demoblaze.com/'}
+01/26/2024 12:08:27 PM: DEBUG: http://localhost:51285 "POST /session/10a728c1f1f0371c6aebf1c16742d472/url HTTP/1.1" 200 0
+01/26/2024 12:08:27 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/26/2024 12:08:27 PM: DEBUG: Finished Request
+01/26/2024 12:08:27 PM: INFO: Launching application
+01/26/2024 12:08:27 PM: DEBUG: POST http://localhost:51285/session/10a728c1f1f0371c6aebf1c16742d472/timeouts {'implicit': 10000}
+01/26/2024 12:08:27 PM: DEBUG: http://localhost:51285 "POST /session/10a728c1f1f0371c6aebf1c16742d472/timeouts HTTP/1.1" 200 0
+01/26/2024 12:08:27 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/26/2024 12:08:27 PM: DEBUG: Finished Request
+01/26/2024 12:08:27 PM: DEBUG: POST http://localhost:51285/session/10a728c1f1f0371c6aebf1c16742d472/window/maximize {}
+01/26/2024 12:08:27 PM: DEBUG: http://localhost:51285 "POST /session/10a728c1f1f0371c6aebf1c16742d472/window/maximize HTTP/1.1" 200 0
+01/26/2024 12:08:27 PM: DEBUG: Remote response: status=200 | data={"value":{"height":688,"width":1296,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/26/2024 12:08:27 PM: DEBUG: Finished Request
+01/26/2024 12:08:27 PM: DEBUG: POST http://localhost:51285/session/10a728c1f1f0371c6aebf1c16742d472/element {'using': 'css selector', 'value': '[id="signin2"]'}
+01/26/2024 12:08:27 PM: DEBUG: http://localhost:51285 "POST /session/10a728c1f1f0371c6aebf1c16742d472/element HTTP/1.1" 200 0
+01/26/2024 12:08:27 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"6E5192930368DCE6E31A8FC78ABB22D6_element_41"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/26/2024 12:08:27 PM: DEBUG: Finished Request
+01/26/2024 12:08:27 PM: DEBUG: POST http://localhost:51285/session/10a728c1f1f0371c6aebf1c16742d472/element/6E5192930368DCE6E31A8FC78ABB22D6_element_41/click {}
+01/26/2024 12:08:27 PM: DEBUG: http://localhost:51285 "POST /session/10a728c1f1f0371c6aebf1c16742d472/element/6E5192930368DCE6E31A8FC78ABB22D6_element_41/click HTTP/1.1" 200 0
+01/26/2024 12:08:27 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/26/2024 12:08:27 PM: DEBUG: Finished Request
+01/26/2024 12:08:27 PM: INFO: ***clicking on signup***
+01/26/2024 12:08:27 PM: INFO: ***providing details for signup
+01/26/2024 12:08:27 PM: DEBUG: POST http://localhost:51285/session/10a728c1f1f0371c6aebf1c16742d472/element {'using': 'css selector', 'value': '[id="sign-username"]'}
+01/26/2024 12:08:28 PM: DEBUG: http://localhost:51285 "POST /session/10a728c1f1f0371c6aebf1c16742d472/element HTTP/1.1" 200 0
+01/26/2024 12:08:28 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"6E5192930368DCE6E31A8FC78ABB22D6_element_78"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/26/2024 12:08:28 PM: DEBUG: Finished Request
+01/26/2024 12:08:28 PM: DEBUG: POST http://localhost:51285/session/10a728c1f1f0371c6aebf1c16742d472/element/6E5192930368DCE6E31A8FC78ABB22D6_element_78/value {'text': 'swa1234', 'value': ['s', 'w', 'a', '1', '2', '3', '4']}
+01/26/2024 12:08:28 PM: DEBUG: http://localhost:51285 "POST /session/10a728c1f1f0371c6aebf1c16742d472/element/6E5192930368DCE6E31A8FC78ABB22D6_element_78/value HTTP/1.1" 200 0
+01/26/2024 12:08:28 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/26/2024 12:08:28 PM: DEBUG: Finished Request
+01/26/2024 12:08:28 PM: DEBUG: POST http://localhost:51285/session/10a728c1f1f0371c6aebf1c16742d472/element {'using': 'css selector', 'value': '[id="sign-password"]'}
+01/26/2024 12:08:28 PM: DEBUG: http://localhost:51285 "POST /session/10a728c1f1f0371c6aebf1c16742d472/element HTTP/1.1" 200 0
+01/26/2024 12:08:28 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"6E5192930368DCE6E31A8FC78ABB22D6_element_25"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/26/2024 12:08:28 PM: DEBUG: Finished Request
+01/26/2024 12:08:28 PM: DEBUG: POST http://localhost:51285/session/10a728c1f1f0371c6aebf1c16742d472/element/6E5192930368DCE6E31A8FC78ABB22D6_element_25/value {'text': 'swa1234', 'value': ['s', 'w', 'a', '1', '2', '3', '4']}
+01/26/2024 12:08:28 PM: DEBUG: http://localhost:51285 "POST /session/10a728c1f1f0371c6aebf1c16742d472/element/6E5192930368DCE6E31A8FC78ABB22D6_element_25/value HTTP/1.1" 200 0
+01/26/2024 12:08:28 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/26/2024 12:08:28 PM: DEBUG: Finished Request
+01/26/2024 12:08:28 PM: DEBUG: POST http://localhost:51285/session/10a728c1f1f0371c6aebf1c16742d472/element {'using': 'xpath', 'value': "//button[@onclick='register()']"}
+01/26/2024 12:08:28 PM: DEBUG: http://localhost:51285 "POST /session/10a728c1f1f0371c6aebf1c16742d472/element HTTP/1.1" 200 0
+01/26/2024 12:08:28 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"6E5192930368DCE6E31A8FC78ABB22D6_element_113"}} | headers=HTTPHeaderDict({'Content-Length': '96', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/26/2024 12:08:28 PM: DEBUG: Finished Request
+01/26/2024 12:08:28 PM: DEBUG: POST http://localhost:51285/session/10a728c1f1f0371c6aebf1c16742d472/element/6E5192930368DCE6E31A8FC78ABB22D6_element_113/click {}
+01/26/2024 12:08:28 PM: DEBUG: http://localhost:51285 "POST /session/10a728c1f1f0371c6aebf1c16742d472/element/6E5192930368DCE6E31A8FC78ABB22D6_element_113/click HTTP/1.1" 200 0
+01/26/2024 12:08:28 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+01/26/2024 12:08:28 PM: DEBUG: Finished Request
+01/26/2024 12:08:28 PM: INFO: Sign in successful
